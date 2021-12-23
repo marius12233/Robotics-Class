@@ -1,0 +1,16 @@
+<package format="2">
+
+  <name>comau_description</name>
+  <version>1.0.0</version>
+
+  <description>The comau_description package</description>
+
+  <author email="mariocerino83@gmail.com">Mario Cerino</author>
+  <maintainer email="mariocerino83@gmail.com">Mario Cerino</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>xacro</exec_depend>
+
+</package>

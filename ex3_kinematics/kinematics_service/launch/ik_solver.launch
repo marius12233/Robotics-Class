@@ -1,0 +1,12 @@
+<launch>
+
+  <!-- Load the URDF, SRDF and other .yaml configuration files on the param server -->
+  <include file="$(find smartsix_moveit_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+
+  <param name="planning_group_name" value="smartsix"/>
+
+  <node name="ik_server_node" pkg="kinematics_service" type="ik_server_node" output="screen"/>
+
+</launch>

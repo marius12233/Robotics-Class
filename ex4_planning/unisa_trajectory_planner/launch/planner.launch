@@ -1,0 +1,12 @@
+<launch>
+
+    <arg name="debugger_attached" default="false" />
+
+    <param name="planning_group_name" value="smartsix"/>
+    <param name="trajectory_filename" value="yz_circular.traj"/>
+
+    <node pkg="unisa_trajectory_planner" type="unisa_trajectory_planner" name="unisa_trajectory_planner" output="screen" unless="$(arg debugger_attached)"/>
+
+    <node pkg="rqt_multiplot" type="rqt_multiplot" name="rqt_multiplot"/>
+
+</launch>
